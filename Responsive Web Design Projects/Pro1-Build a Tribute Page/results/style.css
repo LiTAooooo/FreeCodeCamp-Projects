@@ -1,0 +1,60 @@
+html {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+figcaption {
+    margin-top: 15px;
+}
+
+section ul {
+    text-align: left;
+    max-width: 35%;
+    margin: auto;
+}
+
+ul li {
+    margin: 10px;
+}
+
+ul h2 {
+    font-size: 1.2em;
+    margin-top: 40px;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+#main {
+
+    margin: 30px 0;
+    padding: 15px 0;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #eee;
+    color: #333;
+}
+
+
+#img-figure {
+
+    margin: 0 10px;
+    padding: 15px 0;
+    background-color: white;
+}
+
+#wiki-info {
+    font-size: 1.2em;
+} 
