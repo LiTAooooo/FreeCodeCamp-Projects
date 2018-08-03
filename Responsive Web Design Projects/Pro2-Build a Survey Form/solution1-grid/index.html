@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header><h1>Survey Form</h1></header>
+    <main id="main">
+    	<p id="form-descrip">Let us know how we can improve freeCodeCamp</p>
+    	<form id="form-container">
+    		<label for="input-name" class="column-first">* Name:</label>
+    		<input type="text" name="usr-name" id="input-name" required placeholder="Enter your name" autofocus>
+
+    		<label for="input-email" class="column-first">* Email:</label>
+    		<input type="email" name="usr-email" id="input-email" required placeholder="Enter your Email">
+
+    		<label for="input-age" class="column-first">* Age:</label>
+    		<input type="number" name="usr-age" id="input-age" required min="1" max="125" placeholder="Age">
+
+    		<label for="select-role" class="column-first">Which option best describes your current role?</label>
+    		<select id="select-role" name="usr-role">
+    			<option disabled>Select an option</option>
+    			<option selected>Student</option>
+    			<option>Full Time Job</option>
+    			<option>Full Time Learner</option>
+    			<option>Prefer not to say</option>
+    			<option>Other</option>
+    		</select>
+
+    		<label for="radio-list" class="column-first">* How likely is that you would recommend<br>freeCodeCamp to a friend?</label>
+    		<ul id="radio-list">
+    			<li><input type="radio" name="posibility" value="definitely" id="definitely" required><label for="definitely">Definitely</label></li>
+    			<li><input type="radio" name="posibility" value="maybe" id="maybe" required><label for="maybe">Maybe</label></li>
+    			<li><input type="radio" name="posibility" value="not-sure" id="not-sure" required><label for="not-sure">Not sure</label></li>
+    		</ul>
+
+    		<label for="select-like" class="column-first">What do you like most in FCC:</label>
+    		<select id="select-like" name="usr-like">
+    			<option disabled>Select an option</option>
+    			<option selected>Challenges</option>
+    			<option>Projects</option>
+    			<option>Community</option>
+    			<option>Open Source</option>
+    		</select>
+
+    		<label for="checkbox-list" class="column-first">Things that should be improved in the future<br>(Check all that apply):</label>
+    		<ul id="checkbox-list">
+    			<li><input type="checkbox" name="front-end-pros" value="front-end-pros" id="front-end-pros"><label for="front-end-pros">Front-end Projects</label></li>
+    			<li><input type="checkbox" name="back-end-pros" value="back-end-pros" id="back-end-pros"><label for="back-end-pros">Back-end Projects</label></li>
+    			<li><input type="checkbox" name="data-visualiz" value="data-visualiz" id="data-visualiz"><label for="data-visualiz">Data Visualization</label></li>
+    			<li><input type="checkbox" name="challenges" value="challenges" id="challenges"><label for="challenges">Challenges</label></li>
+    			<li><input type="checkbox" name="community" value="community" id="community"><label for="community">Open Source Community</label></li>
+    			<li><input type="checkbox" name="gitter-help" value="gitter-help" id="gitter-help"><label for="gitter-help">Gitter help rooms</label></li>
+    			<li><input type="checkbox" name="video" value="video" id="video"><label for="video">Videos</label></li>
+    			<li><input type="checkbox" name="city-meetups" value="city-meetups" id="city-meetups"><label for="city-meetups">City Meetups</label></li>
+    			<li><input type="checkbox" name="wiki" value="wiki" id="wiki"><label for="wiki">Wiki</label></li>
+    			<li><input type="checkbox" name="forum" value="forum" id="forum"><label for="forum">Forum</label></li>
+    			<li><input type="checkbox" name="courses" value="courses" id="courses"><label for="courses">Additional Courses</label></li>
+    		</ul>
+
+    		<label for="textarea" class="column-first">Any Comments or Suggestions?</label>
+    		<textarea name="comments" id="textarea" placeholder="Enter your comment here..."></textarea>
+
+    		<button type="submit" id="submit">Submit</button>
+       	</form>
+    </main>
+</body>
+</html>

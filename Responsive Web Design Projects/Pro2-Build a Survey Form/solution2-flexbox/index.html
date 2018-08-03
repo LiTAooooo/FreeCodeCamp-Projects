@@ -12,23 +12,31 @@
     	<p id="form-descrip">Let us know how we can improve freeCodeCamp</p>
     	<form id="form-container">
     		<label for="input-name" class="column-first">* Name:</label>
-    		<input type="text" name="usr-name" id="input-name" required placeholder="Enter your name" autofocus="">
+            <div>
+    		    <input type="text" name="usr-name" id="input-name" required placeholder="Enter your name" autofocus>
+            </div>
 
     		<label for="input-email" class="column-first">* Email:</label>
-    		<input type="email" name="usr-email" id="input-email" required placeholder="Enter your Email">
+            <div>
+    		    <input type="email" name="usr-email" id="input-email" required placeholder="Enter your Email">
+            </div>
 
     		<label for="input-age" class="column-first">* Age:</label>
-    		<input type="number" name="usr-age" id="input-age" required min="1" max="125" placeholder="Age">
+            <div>
+    		    <input type="number" name="usr-age" id="input-age" required min="1" max="125" placeholder="Age">
+            </div>
 
     		<label for="select-role" class="column-first">Which option best describes your current role?</label>
-    		<select id="select-role" name="usr-role">
-    			<option disabled>Select an option</option>
-    			<option selected>Student</option>
-    			<option>Full Time Job</option>
-    			<option>Full Time Learner</option>
-    			<option>Prefer not to say</option>
-    			<option>Other</option>
-    		</select>
+    		<div>
+                <select id="select-role" name="usr-role">
+    			    <option disabled>Select an option</option>
+    			    <option selected>Student</option>
+    			    <option>Full Time Job</option>
+    			    <option>Full Time Learner</option>
+    			    <option>Prefer not to say</option>
+    			    <option>Other</option>
+    		    </select>
+            </div>
 
     		<label for="radio-list" class="column-first">* How likely is that you would recommend<br>freeCodeCamp to a friend?</label>
     		<ul id="radio-list">
@@ -38,13 +46,15 @@
     		</ul>
 
     		<label for="select-like" class="column-first">What do you like most in FCC:</label>
-    		<select id="select-like" name="usr-like">
-    			<option disabled>Select an option</option>
-    			<option selected>Challenges</option>
-    			<option>Projects</option>
-    			<option>Community</option>
-    			<option>Open Source</option>
-    		</select>
+            <div>
+    		    <select id="select-like" name="usr-like">
+    			    <option disabled>Select an option</option>
+    			    <option selected>Challenges</option>
+    			    <option>Projects</option>
+    			    <option>Community</option>
+    			    <option>Open Source</option>
+    		    </select>
+            </div>
 
     		<label for="checkbox-list" class="column-first">Things that should be improved in the future<br>(Check all that apply):</label>
     		<ul id="checkbox-list">
@@ -62,9 +72,13 @@
     		</ul>
 
     		<label for="textarea" class="column-first">Any Comments or Suggestions?</label>
-    		<textarea name="comments" id="textarea" placeholder="Enter your comment here..."></textarea>
+            <div>
+    		    <textarea name="comments" id="textarea" placeholder="Enter your comment here..."></textarea>
+            </div>
 
-    		<button type="submit" id="submit">Submit</button>
+            <div>
+    		    <button type="submit" id="submit">Submit</button>
+            </div>
        	</form>
     </main>
 </body>
