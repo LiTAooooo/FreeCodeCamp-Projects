@@ -38,16 +38,25 @@ input[type="radio"] {
 }
 
 #form-container {
+	font-size: 0;	/*clear space*/
+}
 
-
+#form-container > * {
+	display: inline-block;
+	width: calc(50% - 10px);
+	vertical-align: top;
+	margin-bottom: 20px;
+	font-size: 1rem;
 }
 
 #submit {
+	display: block;
 	width: 100px;
 	height: 40px;
+	margin: 0 auto;
 	border-radius: 5px;
+	font-size: 1.1rem;
 	border-style: none;
-	font-size: 1.1em;
 	color: white;
 	background-color: rgb(89,172,224);
 }
@@ -77,4 +86,5 @@ input[type="radio"] {
 
 .column-first {
 	text-align: right;
+	margin-right: 20px;
 }
