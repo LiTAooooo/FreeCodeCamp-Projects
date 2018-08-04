@@ -5,6 +5,7 @@ html {
 }
 
 body {
+	min-width: 350px;
 	background-color: rgb(169,215,209);
 }
 
@@ -73,7 +74,7 @@ input[type="radio"] {
 
 #select-like,
 #select-role {
-	width: 35%;
+	width: 140px;
 	padding: 8px;
 }
 
@@ -84,4 +85,32 @@ input[type="radio"] {
 .column-first {
 	text-align: right;
 	margin-right: 20px;
+}
+
+@media screen and (max-width: 770px) {
+	#form-container > * {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.column-first {
+		text-align: left;
+		margin-right: 0;
+	}
+
+	#submit {
+		width: 100px;
+		margin-bottom: 0;
+	}
+
+}
+
+@media screen and (max-width: 500px) {
+	#input-name,
+	#input-email,
+	#input-age,
+	#textarea {
+		width: 80%;
+
+	}
 }
