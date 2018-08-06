@@ -1,0 +1,258 @@
+ @import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+ * {
+ 	box-sizing: border-box;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+html {
+	font: 10px/1.5 'Lato', sans-serif;
+	background-color: #eee;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+#header {
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	padding: 1.5rem 0 1.5rem 4.5rem;
+	background-color: #eee;
+}
+
+#header-img {
+	max-width: 300px;
+}
+
+#nav-bar {
+	flex: auto;
+}
+
+#nav-list {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#email-submit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10rem;
+}
+
+#email-submit h2 {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#email-submit form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input[type="email"] {
+	width: 30rem;
+	padding: .5rem;
+	margin-bottom: 1.5rem;
+}
+
+#submit {
+	background-color: #f1c40f;
+	height: 3rem;
+	border: 0;
+	border-radius: .2rem;
+	padding: 0 2rem;
+	font-size: 1.1em;
+	font-weight: 900;
+}
+
+#how-it-works {
+	margin: 7rem 0;
+	text-align: center;
+}
+
+#how-it-works iframe{
+	max-width: 560px;
+	width: 100%;
+}
+
+#pricing {
+	display: flex;
+	margin-bottom: 5rem;
+}
+
+#footer {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 2rem;
+	background-color: #ddd;
+	text-align: right;
+}
+
+#footer p {
+	font-size: .9em;
+	color: #444;
+}
+
+#footer ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#footer ul li{
+	padding: 0 1rem;
+}
+
+
+.nav-link {
+	padding-right: 10%;
+}
+
+.dl-row {
+	display: flex;
+	margin-bottom: 3rem;
+}
+
+.icon {
+	display: flex;
+	width: 10rem;
+	height: 10rem;
+	flex: none;
+	margin-right: 5rem;
+	justify-content: center;
+	align-items: center;
+	color: #ff8c00;
+}
+.desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.desc dt {
+	font-size: 1.5em;
+	font-weight: 900;
+}
+
+.price-item {
+	flex: 1;
+	border: .1rem solid black;
+	margin: 0 1rem;
+	border-radius: .4rem;
+	text-align: center;
+}
+
+.price-item h2 {
+	padding: 1.5rem 0;
+	font-size: 1em;
+	text-transform: uppercase;
+	background-color: #ddd;
+}
+
+.price-item h3 {
+	padding: 1.5rem 0;
+	font-size: 1.5em;
+}
+
+.price-item li {
+	margin-bottom: 1rem;
+}
+
+.price-item button {
+	margin: 2rem 0;
+	border: 0;
+	padding: 1rem 2.2rem;
+	font-size: 1.1em;
+	background-color: #f1c40f;
+	border-radius: .2rem;
+}
+
+@media screen and (max-width: 800px) {
+	#pricing {
+		flex-direction: column;
+	}
+
+	.price-item {
+		width: 100%;
+		max-width: 310px;
+		margin: 0 auto;
+		margin-bottom: 1rem;
+	}
+
+	#email-submit {
+		margin-bottom: 5rem;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+	#nav-list {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#nav-list li {
+		margin: .2rem 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#header {
+		flex-direction: column;
+		padding-left: 0;
+	}
+
+	#nav-bar {
+		margin-top: 1rem;
+	}
+
+	.nav-link {
+		padding: 0;
+	}
+
+	#how-it-works {
+		margin: 5rem 0;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+	.icon {
+		display: none;
+	}
+
+	.desc {
+		text-align: center;
+	}
+
+	#email-submit form {
+		max-width: 100%;
+	}
+
+	input[type="email"] {
+		max-width: 100%;
+	}
+
+	#header-img {
+		width: 100%;
+	}
+}
