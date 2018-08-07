@@ -1,0 +1,180 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font: 16px/1.5 'Open Sans', sans-serif;
+}
+
+#navbar {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	background-color: #e0ebe8;
+}
+
+#navbar ul {
+	display: flex;
+	width: 30%;
+	min-height: 55px;
+	margin: auto;
+	margin-right: 0;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
+}
+
+#welcome-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #e0ebe8;
+}
+
+#welcome-section-desc {
+	text-align: center;
+}
+
+#welcome-section-desc h1 {
+	font-size: 2.5em;
+}
+
+#welcome-section-desc p {
+	font-size: 1.1em;
+	color: green;
+}
+
+#projects-section {
+	padding: 50px 0;
+	text-align: center;
+	color: #008080;
+	margin-bottom: 30px;
+}
+
+#projects-section h2 {
+	font-weight: normal;
+}
+
+#profiles {
+	font-size: 0;
+}
+
+#show-all {
+	display: inline-block;
+	width: 200px;
+	border: 2px solid #90C695;
+	padding: 8px 0;
+	border-radius: 5px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #008080;
+	background-color: #e0ebe8;
+}
+
+#show-all:hover {
+	background-color: yellow;
+}
+
+#contact-section {
+	padding: 150px 0;
+	text-align: center;
+	background-color: #C8F7C5;
+}
+
+#contact-section h2 {
+	font-size: 2em;
+}
+
+#contact-div {
+	margin-top: 100px;
+	font-size: 0;
+}
+
+#footer {
+	padding: 30px 0;
+	background-color: #22313F;
+	color: white;
+	text-align: center;
+	line-height: 2;
+}
+
+#copyright-link {
+	border-bottom: 1px solid white;
+	color: white;
+	text-decoration: none;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: rgb(0,128,128);	
+}
+
+.nav-link:hover {
+	color: green;
+}
+
+.profile-link {
+	display: inline-block;
+	width: 280px;
+	height: 220px;
+	margin: 40px 100px;
+	border: 2px solid lightblue;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #008080;
+	text-decoration: none;
+}
+
+.profile-link img {
+	width: 100%;
+	height: 180px;
+	border-bottom: 2px solid lightblue;
+}
+
+.contact-link {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 0 40px 40px 40px;
+	border: 2px solid #90C695;
+	border-radius: 50%;
+	line-height: 100px;
+	text-decoration: none;
+	color: #008080;
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: #e0ebe8;
+}
+
+@media screen and (max-width: 1000px) {
+	#navbar ul {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#navbar ul {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#navbar ul {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.profile-link {
+		margin: 40px 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#navbar ul {
+		width: 100%;
+	}
+}
